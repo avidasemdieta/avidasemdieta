@@ -4,10 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- TROCAR: substitua avidasemdieta.com.br pelo seu domínio real em TODAS as linhas abaixo -->
 <title>A Vida Sem Dieta | Nutrição comportamental e esportiva com Marina Amancio</title>
-<meta name="description" content="Acompanhamento individual de dez semanas que regula alimentação, movimento, sono, intestino e comportamento. Emagrecimento e saúde sem dieta restritiva, com nutricionista e personal trainer. Atendimento online.">
-<link rel="canonical" href="https://avidasemdieta.com.br/">
+<meta name="description" content="Acompanhamento individual de dez semanas que regula alimentação, atividade física, sono, intestino e saúde mental. Emagrecimento e saúde sem dieta restritiva, com nutricionista e personal trainer. Atendimento online.">
+<link rel="canonical" href="https://www.avidasemdieta.com.br/">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="author" content="Marina Amancio">
 <meta name="theme-color" content="#294036">
@@ -16,9 +15,9 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="A Vida Sem Dieta">
 <meta property="og:title" content="A Vida Sem Dieta | Marina Amancio">
-<meta property="og:description" content="Dez semanas para regular os cinco eixos que fazem o corpo responder: alimentação, movimento, sono, intestino e comportamento. Sem dieta restritiva.">
-<meta property="og:url" content="https://avidasemdieta.com.br/">
-<meta property="og:image" content="https://avidasemdieta.com.br/marina.jpg">
+<meta property="og:description" content="Dez semanas para regular os cinco eixos que fazem o corpo responder: alimentação, atividade física, sono, intestino e saúde mental. Sem dieta restritiva.">
+<meta property="og:url" content="https://www.avidasemdieta.com.br/">
+<meta property="og:image" content="https://www.avidasemdieta.com.br/marina.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,13 +48,14 @@ body{
   line-height:1.72;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
-.narrow{max-width:40rem}
+.wrap{max-width:74rem;margin:0 auto;padding:0 1.5rem}
+@media(min-width:1200px){.wrap{padding:0 2rem}}
+.narrow{max-width:42rem}
 section{padding:5.5rem 0}
 @media(max-width:640px){section{padding:3.75rem 0}body{font-size:1.0625rem}}
 
 h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.14;letter-spacing:-0.012em}
-h1{font-size:clamp(2.1rem,5vw,3.55rem);line-height:1.18;font-variation-settings:"opsz" 60}
+h1{font-size:clamp(2.05rem,4.4vw,3.9rem);line-height:1.14;font-variation-settings:"opsz" 60}
 h2{font-size:clamp(1.75rem,3.4vw,2.5rem);line-height:1.2;font-variation-settings:"opsz" 48;margin-bottom:1.5rem}
 h3{font-size:1.3rem;font-variation-settings:"opsz" 26;font-weight:600}
 p{max-width:60ch;color:var(--body)}
@@ -67,13 +67,22 @@ a{color:inherit}
 .mark span{color:var(--moss);font-weight:400}
 
 .hero{padding-top:4.5rem;padding-bottom:4rem}
-.hero h1{max-width:19ch;color:var(--ink);opacity:0;animation:rise .8s cubic-bezier(.2,.7,.3,1) .05s forwards}
+.hero h1{max-width:24ch;color:var(--ink);opacity:0;animation:rise .8s cubic-bezier(.2,.7,.3,1) .05s forwards}
 .hero .sub{margin-top:2rem;font-size:1.22rem;color:var(--pine);max-width:50ch;opacity:0;animation:rise .8s cubic-bezier(.2,.7,.3,1) .28s forwards}
 .hero .who{margin-top:1.1rem;font-size:1.02rem;color:var(--moss);max-width:52ch;opacity:0;animation:rise .8s cubic-bezier(.2,.7,.3,1) .42s forwards}
 .hero .actions{margin-top:2.4rem;opacity:0;animation:rise .8s cubic-bezier(.2,.7,.3,1) .56s forwards}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero h1,.hero .sub,.hero .who,.hero .actions{opacity:1;animation:none}}
 
+
+.hero-grid{display:grid;grid-template-columns:1fr;gap:1.1rem;margin-top:2rem}
+@media(min-width:900px){
+  .hero{padding-top:5.5rem}
+  .hero-grid{grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:start;margin-top:2.6rem}
+  .hero .sub{margin-top:0}
+  .hero .who{margin-top:0;padding-top:.35rem;border-top:1px solid var(--line)}
+  .hero .actions{margin-top:1.6rem}
+}
 .rule{width:3.5rem;height:2px;background:var(--ochre);margin-bottom:2.2rem}
 
 .btn{
@@ -91,6 +100,12 @@ a{color:inherit}
 a:focus-visible,button:focus-visible{outline:2px solid var(--ochre);outline-offset:3px}
 
 .recog{background:var(--paper-2)}
+@media(min-width:900px){
+  .recog .wrap{display:grid;grid-template-columns:16rem 1fr;gap:4rem;align-items:start}
+  .recog h2{margin-bottom:0;position:sticky;top:2rem}
+  .recog li{max-width:none}
+}
+
 .recog ul{list-style:none;margin-top:.5rem}
 .recog li{
   padding:1.15rem 0 1.15rem 1.9rem;border-bottom:1px solid var(--line);
@@ -132,6 +147,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ochre);outline-offs
 .stars{color:var(--ochre);letter-spacing:.12em;font-size:1.05rem}
 .rating .src{color:var(--moss);font-size:1rem}
 .reviews{margin-top:2.8rem;columns:2;column-gap:1.6rem}
+@media(min-width:1150px){.reviews{columns:3}}
 @media(max-width:820px){.reviews{columns:1}}
 .review{
   background:#fff;border:1px solid var(--line);border-radius:.5rem;
@@ -149,11 +165,12 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ochre);outline-offs
 .review p{color:#2C3830;max-width:none}
 .review p + p{margin-top:.65rem}
 
-.sobre{display:grid;grid-template-columns:.85fr 1.15fr;gap:3.5rem;align-items:start}
-@media(max-width:820px){.sobre{grid-template-columns:1fr;gap:2rem}}
+.sobre{display:grid;grid-template-columns:1fr;gap:2rem;align-items:start}
+@media(min-width:900px){.sobre{grid-template-columns:1.05fr 1.25fr;gap:4rem}.sobre img{position:sticky;top:2.5rem}}
 .sobre img{width:100%;height:auto;border-radius:.5rem;display:block}
 .creds{list-style:none;margin-top:1.8rem}
-.creds li{padding:.72rem 0;border-bottom:1px solid var(--line);color:var(--pine)}
+.creds li{padding:.72rem 0 .72rem 1.35rem;border-bottom:1px solid var(--line);color:var(--pine);position:relative}
+.creds li::before{content:"•";position:absolute;left:0;top:.72rem;color:var(--ochre);font-weight:700}
 .creds li:last-child{border-bottom:none}
 
 .filtro{background:var(--paper-2)}
@@ -168,12 +185,18 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ochre);outline-offs
 .two .no li{color:var(--moss)}
 
 .cta{background:var(--pine);color:var(--paper)}
+@media(min-width:900px){
+  .cta .wrap{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+  .cta h2{margin-bottom:0}
+}
+
 .cta h2{color:var(--paper);max-width:16ch}
 .cta p{color:#CDD5CC;max-width:48ch;margin-bottom:2.2rem}
 .cta .btn{background:var(--ochre-soft);color:var(--ink)}
 .cta .btn:hover,.cta .btn:focus-visible{background:#fff}
 .cta .fine{margin-top:1.6rem;font-size:.96rem;color:#A8B4A9;max-width:46ch}
 
+.faq .narrow{margin-left:auto;margin-right:auto}
 .faq details{border-bottom:1px solid var(--line);padding:1.2rem 0}
 .faq summary{
   cursor:pointer;font-weight:600;font-size:1.08rem;list-style:none;
@@ -184,6 +207,17 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ochre);outline-offs
 .faq details[open] summary::after{content:"–"}
 .faq details p{margin-top:.85rem}
 
+
+.wa-float{
+  position:fixed;right:1.1rem;bottom:1.1rem;z-index:50;
+  width:3.4rem;height:3.4rem;border-radius:50%;
+  background:var(--pine);color:var(--paper);
+  display:grid;place-items:center;text-decoration:none;
+  box-shadow:0 6px 18px rgba(22,32,27,.28);
+  transition:background .2s ease;
+}
+.wa-float:hover,.wa-float:focus-visible{background:var(--ink)}
+@media print{.wa-float{display:none}}
 footer{border-top:1px solid var(--line);padding:2.5rem 0;color:var(--moss);font-size:.95rem}
 footer p{max-width:none;color:var(--moss)}
 </style>
@@ -193,7 +227,7 @@ footer p{max-width:none;color:var(--moss)}
 <div class="topbar">
   <div class="wrap">
     <div class="mark">A Vida Sem Dieta <span>Marina Amancio</span></div>
-    <a class="btn-ghost" href="#aplicar" style="margin-left:0">Aplicar</a>
+    <a class="btn-ghost" href="#aplicar" style="margin-left:0">Falar comigo</a>
   </div>
 </div>
 
@@ -202,10 +236,14 @@ footer p{max-width:none;color:var(--moss)}
   <div class="wrap">
     <div class="rule"></div>
     <h1>Você não precisa viver como atleta, fazer dieta restritiva ou transformar a saúde em um segundo emprego para ter um corpo que funciona bem.</h1>
-    <p class="sub">A Vida Sem Dieta é uma abordagem de dez semanas que regula os cinco eixos que fazem o corpo responder: alimentação, movimento, sono, intestino e comportamento.</p>
-    <p class="who">Conduzida por Marina Amancio, nutricionista e personal trainer, com pós-graduação em nutrição comportamental e em nutrição esportiva. Seis anos de prática, livro publicado e artigo em revista internacional citado em 28 países.</p>
+    <div class="hero-grid">
+      <p class="sub">A Vida Sem Dieta é uma abordagem de dez semanas que regula os cinco eixos que fazem o corpo responder: alimentação, atividade física, sono, intestino e saúde mental.</p>
+      <div>
+        <p class="who">Conduzida por Marina Amancio, nutricionista e personal trainer, com pós-graduações em nutrição comportamental e em nutrição esportiva. Seis anos de prática, livro publicado e artigo científico citado em 28 países.</p>
+      </div>
+    </div>
     <div class="actions">
-      <a class="btn" href="#aplicar">Aplicar para uma vaga</a>
+      <a class="btn" href="https://wa.me/5531994889818?text=Oi%20Marina%2C%20cheguei%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20acompanhamento." target="_blank" rel="noopener">Falar comigo no WhatsApp</a>
       <a class="btn-ghost" href="#abordagem">Entender a abordagem</a>
     </div>
   </div>
@@ -215,6 +253,7 @@ footer p{max-width:none;color:var(--moss)}
 <section class="recog">
   <div class="wrap">
     <h2>Talvez você se reconheça aqui</h2>
+    <div>
     <ul>
       <li>Você gosta de se mexer. Academia, corrida, dança, beach tennis, às vezes duas coisas no mesmo dia, e não sabe se está se recuperando entre elas.</li>
       <li>Sente que faz tudo mais ou menos certo, mas sente que o corpo não responde na mesma proporção do esforço.</li>
@@ -223,7 +262,8 @@ footer p{max-width:none;color:var(--moss)}
       <li>Já tentou dieta. Funcionou por um tempo e não se sustentou.</li>
       <li>Gostaria de emagrecer, mas não ao custo de passar o resto da vida contando comida.</li>
     </ul>
-    <p class="after">Você não quer “virar atleta”, quer fazer bem aquilo que já gosta de fazer, e quer que o corpo acompanhe.</p>
+    </div>
+    <p class="after" style="grid-column:1/-1">Você não quer “virar atleta”, quer fazer bem aquilo que já gosta de fazer, e quer que o corpo acompanhe.</p>
   </div>
 </section>
 
@@ -241,7 +281,7 @@ footer p{max-width:none;color:var(--moss)}
         <p>Comer o que o corpo precisa, quando precisa, na quantidade que precisa, com os alimentos que já fazem parte da sua rotina. Nutrição adequada sustenta imunidade, longevidade e o rendimento naquilo que você gosta de fazer.</p>
       </div>
       <div class="eixo">
-        <h3>Movimento</h3>
+        <h3>Atividade física</h3>
         <p>O que você já faz, organizado. Quais treinos podem conviver no mesmo dia, quais competem entre si, quanto descanso cada um exige. Movimento bem distribuído permite que você continue fazendo o que gosta, sem parar por lesões, favorecendo o emagrecimento ou até o ganho de desempenho.</p>
       </div>
       <div class="eixo">
@@ -253,12 +293,12 @@ footer p{max-width:none;color:var(--moss)}
         <p>Não importa só o que você come, importa o que você absorve. O intestino responde por boa parte do sistema imunológico e costuma ser o primeiro lugar onde o corpo avisa que alguma coisa não está certa.</p>
       </div>
       <div class="eixo">
-        <h3>Comportamento</h3>
+        <h3>Saúde mental</h3>
         <p>Aprender a diferenciar fome de vontade, sair do ciclo de culpa e comer em paz. É essa parte que faz o resultado permanecer depois que o acompanhamento termina.</p>
       </div>
     </div>
 
-    <p style="margin-top:2.8rem;font-family:var(--serif);font-size:1.4rem;font-weight:500;line-height:1.45;color:var(--pine);max-width:34ch">Quando os cinco eixos estão alinhados, o corpo passa a responder ao esforço que você já vinha fazendo.</p>
+    <p style="margin-top:2.8rem;margin-left:auto;font-family:var(--serif);font-size:1.5rem;font-weight:500;line-height:1.42;color:var(--pine);max-width:36ch">Quando os cinco eixos estão alinhados, o corpo passa a responder ao esforço que você já vinha fazendo.</p>
   </div>
 </section>
 
@@ -376,17 +416,17 @@ footer p{max-width:none;color:var(--moss)}
 <!-- SOBRE -->
 <section>
   <div class="wrap sobre">
-    <img src="marina.jpg" width="900" height="1125" loading="lazy" decoding="async" alt="Marina Amancio, nutricionista e personal trainer, sentada em uma pedra durante uma trilha">
+    <img src="marina.jpg" width="1400" height="1750" loading="lazy" decoding="async" alt="Marina Amancio, nutricionista e personal trainer, sentada em uma pedra durante uma trilha">
     <div>
       <h2>Quem conduz</h2>
-      <p style="color:var(--pine);font-size:1.1rem">Sou nutricionista e personal trainer, com duas pós-graduações, em nutrição comportamental e em nutrição esportiva. Pratico esporte há dezessete anos e como normalmente, inclusive as coisas que gosto. Não me venha com alimento “fit”: aqui é sobre comer de tudo, comida de verdade, com equilíbrio e prazer.</p>
-      <p style="margin-top:1rem">A minha abordagem é destaque no Brasil e no mundo não por ser extrema, mas por ser exclusiva. É a única que trabalha esses cinco eixos ao mesmo tempo e tem foco em desenvolver a autonomia do paciente. É por isso que o meu artigo, publicado em revista internacional, foi citado em 28 países, e hoje atendo também fora do Brasil.</p>
+      <p style="color:var(--pine);font-size:1.1rem">Sou nutricionista e personal trainer, com duas pós-graduações, em nutrição comportamental e em nutrição esportiva. Pratico esporte há dezessete anos e como de tudo normalmente, inclusive as coisas que gosto. Não me venha com alimento “fit”: aqui é sobre comer de tudo, comida de verdade, com equilíbrio e prazer.</p>
+      <p style="margin-top:1rem">Quase todo mundo trata o corpo em pedaços: um profissional para o treino, outro para a comida, outro para o sono. Cada um acerta no seu recorte e ninguém enxerga o conjunto, então o resultado demora ou não vem. Aqui os cinco eixos são conduzidos por uma pessoa só, que olha tudo ao mesmo tempo e ajusta um em função do outro. Onde existe algo parecido, existe uma equipe, e informação que passa de mão em mão se perde no caminho.</p>
+      <p style="margin-top:1rem">E tudo o que eu ensino tem embasamento científico. Durante minha trajetória acadêmica participei de pesquisas na UFMG, no Hospital das Clínicas e na Fiocruz, e sou autora de um estudo publicado no <em>European Journal of Ageing</em>, feito no Instituto René Rachou da Fiocruz, sobre a relação entre fatores de estilo de vida e a presença de múltiplas doenças crônicas em brasileiros com 50 anos ou mais. Ele já foi citado em 28 países, e em muitos deles eu tenho pacientes.</p>
       <p style="margin-top:1rem">A Vida Sem Dieta nasceu disso. Primeiro na minha vida, depois na de centenas de pacientes ao longo de seis anos.</p>
       <ul class="creds">
-        <li>Nutricionista e personal trainer</li>
-        <li>Pós-graduações em nutrição comportamental e nutrição esportiva</li>
-        <li>Artigo publicado em revista internacional, citado em 28 países</li>
-        <li>Livro publicado sobre a abordagem</li>
+        <li>Especializações em imunometabolismo, modulação intestinal, medicina do sono e suplementação de compostos bioativos e fitoterápicos</li>
+        <li>Autora do artigo <a href="https://doi.org/10.1007/s10433-020-00560-z" target="_blank" rel="noopener" style="color:var(--ochre)">Lifestyle factors and multimorbidity among older adults (ELSI-Brazil)</a>, European Journal of Ageing, 2020, assinado com meu nome de solteira, com pesquisa realizada no Instituto René Rachou, Fundação Oswaldo Cruz (Fiocruz)</li>
+        <li>Autora do livro <em>Os 5 pilares do emagrecimento definitivo</em>, disponível em <a href="https://loja.uiclap.com/titulo/ua98392/" target="_blank" rel="noopener" style="color:var(--ochre)">versão física</a> e em <a href="https://pay.kiwify.com.br/I4f1f6T" target="_blank" rel="noopener" style="color:var(--ochre)">versão digital</a></li>
         <li>Seis anos de prática, com atendimento dentro e fora do Brasil</li>
       </ul>
     </div>
@@ -396,7 +436,7 @@ footer p{max-width:none;color:var(--moss)}
 <!-- FILTRO -->
 <section class="filtro">
   <div class="wrap">
-    <h2>Antes de aplicar</h2>
+    <h2>Antes de me chamar</h2>
     <p style="color:var(--pine);margin-bottom:2.4rem">Atendo poucas pessoas por vez, individualmente. Vale saber se faz sentido para você.</p>
     <div class="two">
       <div>
@@ -425,11 +465,12 @@ footer p{max-width:none;color:var(--moss)}
 <!-- CTA -->
 <section class="cta" id="aplicar">
   <div class="wrap">
-    <h2>Aplique para uma vaga</h2>
-    <p>Preencha o formulário. São poucas perguntas sobre sua rotina, o que você já tentou e o que quer resolver. Se fizer sentido, marcamos uma conversa. Se não fizer, eu digo com franqueza.</p>
-    <!-- TROCAR: coloque aqui o link do seu formulário (Google Forms, Typeform, Tally) -->
-    <a class="btn" href="#" target="_blank" rel="noopener">Preencher o formulário</a>
+    <h2>Vamos conversar</h2>
+    <div>
+    <p>Me chame no WhatsApp e me conte sua rotina, o que você já tentou e o que quer resolver. Quem responde sou eu. Se fizer sentido, seguimos. Se não fizer, eu digo com franqueza.</p>
+    <a class="btn" href="https://wa.me/5531994889818?text=Oi%20Marina%2C%20li%20a%20p%C3%A1gina%20inteira%20e%20quero%20conversar%20sobre%20o%20acompanhamento%20de%2010%20semanas." target="_blank" rel="noopener">Falar comigo no WhatsApp</a>
     <p class="fine">Atendimento individual e online, com dez semanas de duração e acompanhamento por WhatsApp depois. Investimento apresentado na conversa.</p>
+    </div>
   </div>
 </section>
 
@@ -440,7 +481,7 @@ footer p{max-width:none;color:var(--moss)}
 
     <details>
       <summary>O que é A Vida Sem Dieta?</summary>
-      <p>É uma abordagem de nutrição comportamental e esportiva criada por Marina Amancio, conduzida em acompanhamento individual de dez semanas. Em vez de tratar uma área por vez, ela regula cinco eixos ao mesmo tempo: alimentação, movimento, sono, intestino e comportamento. O objetivo é que o paciente termine o processo sabendo decidir sozinho, sem depender de dieta nem de acompanhamento permanente.</p>
+      <p>É uma abordagem integrativa em saúde que tem como base a nutrição comportamental, criada por Marina Amancio e conduzida em acompanhamento individual de dez semanas. Em vez de tratar uma área por vez, ela regula cinco eixos ao mesmo tempo: alimentação, atividade física, sono, intestino e saúde mental. O objetivo é que o paciente termine o processo sabendo decidir sozinho, sem depender de dieta nem de acompanhamento permanente.</p>
     </details>
 
     <details>
@@ -470,7 +511,7 @@ footer p{max-width:none;color:var(--moss)}
 
     <details>
       <summary>Como sei que funciona para o meu caso?</summary>
-      <p>É exatamente para isso que existe a conversa antes. Se eu achar que não é o melhor caminho para você, eu digo, e, quando faz sentido, indico outro profissional que possa te ajudar da melhor forma.</p>
+      <p>É exatamente para isso que existe a conversa no WhatsApp antes. Se eu achar que não é o melhor caminho para você, eu digo, e, quando faz sentido, indico outro profissional que possa te ajudar da melhor forma.</p>
     </details>
   </div>
 </section>
@@ -488,33 +529,47 @@ footer p{max-width:none;color:var(--moss)}
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://avidasemdieta.com.br/#marina",
+      "@id": "https://www.avidasemdieta.com.br/#marina",
       "name": "Marina Amancio",
+      "alternateName": "Marina Gabriela Nascimento de Almeida",
       "jobTitle": "Nutricionista e personal trainer",
-      "image": "https://avidasemdieta.com.br/marina.jpg",
-      "url": "https://avidasemdieta.com.br/",
+      "image": "https://www.avidasemdieta.com.br/marina.jpg",
+      "url": "https://www.avidasemdieta.com.br/",
+      "sameAs": ["https://doi.org/10.1007/s10433-020-00560-z"],
+      "affiliation": [
+        { "@type": "Organization", "name": "Instituto René Rachou, Fundação Oswaldo Cruz" },
+        { "@type": "CollegeOrUniversity", "name": "Universidade Federal de Minas Gerais" },
+        { "@type": "Hospital", "name": "Hospital das Clínicas da UFMG" }
+      ],
       "knowsAbout": [
         "nutrição comportamental",
         "nutrição esportiva",
         "emagrecimento sem dieta",
-        "saúde intestinal",
-        "sono e recuperação",
+        "imunometabolismo",
+        "modulação intestinal",
+        "medicina do sono",
+        "suplementação de compostos bioativos e fitoterápicos",
         "treinamento físico"
       ],
       "hasCredential": [
         { "@type": "EducationalOccupationalCredential", "credentialCategory": "Pós-graduação", "name": "Nutrição comportamental" },
-        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Pós-graduação", "name": "Nutrição esportiva" }
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Pós-graduação", "name": "Nutrição esportiva" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Especialização", "name": "Imunometabolismo" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Especialização", "name": "Modulação intestinal" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Especialização", "name": "Medicina do sono" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Especialização", "name": "Suplementação de compostos bioativos e fitoterápicos" }
       ]
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://avidasemdieta.com.br/#negocio",
+      "@id": "https://www.avidasemdieta.com.br/#negocio",
       "name": "A Vida Sem Dieta",
-      "description": "Acompanhamento individual de dez semanas em nutrição comportamental e esportiva, com regulação de cinco eixos: alimentação, movimento, sono, intestino e comportamento.",
-      "url": "https://avidasemdieta.com.br/",
-      "image": "https://avidasemdieta.com.br/marina.jpg",
-      "founder": { "@id": "https://avidasemdieta.com.br/#marina" },
-      "provider": { "@id": "https://avidasemdieta.com.br/#marina" },
+      "description": "Acompanhamento individual de dez semanas em nutrição comportamental e esportiva, com regulação de cinco eixos: alimentação, atividade física, sono, intestino e saúde mental.",
+      "url": "https://www.avidasemdieta.com.br/",
+      "image": "https://www.avidasemdieta.com.br/marina.jpg",
+      "founder": { "@id": "https://www.avidasemdieta.com.br/#marina" },
+      "provider": { "@id": "https://www.avidasemdieta.com.br/#marina" },
+      "telephone": "+5531994889818",
       "areaServed": { "@type": "Country", "name": "Brasil" },
       "availableLanguage": "pt-BR",
       "serviceType": "Acompanhamento nutricional individual online",
@@ -532,12 +587,33 @@ footer p{max-width:none;color:var(--moss)}
       }
     },
     {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1007/s10433-020-00560-z",
+      "name": "Lifestyle factors and multimorbidity among older adults (ELSI-Brazil)",
+      "author": { "@id": "https://www.avidasemdieta.com.br/#marina" },
+      "datePublished": "2020",
+      "isPartOf": { "@type": "Periodical", "name": "European Journal of Ageing" },
+      "identifier": "10.1007/s10433-020-00560-z",
+      "url": "https://doi.org/10.1007/s10433-020-00560-z"
+    },
+    {
+      "@type": "Book",
+      "name": "Os 5 pilares do emagrecimento definitivo",
+      "author": { "@id": "https://www.avidasemdieta.com.br/#marina" },
+      "inLanguage": "pt-BR",
+      "url": "https://loja.uiclap.com/titulo/ua98392/",
+      "workExample": [
+        { "@type": "Book", "bookFormat": "https://schema.org/Paperback", "url": "https://loja.uiclap.com/titulo/ua98392/", "inLanguage": "pt-BR" },
+        { "@type": "Book", "bookFormat": "https://schema.org/EBook", "url": "https://pay.kiwify.com.br/I4f1f6T", "inLanguage": "pt-BR" }
+      ]
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
           "name": "O que é A Vida Sem Dieta?",
-          "acceptedAnswer": { "@type": "Answer", "text": "É uma abordagem de nutrição comportamental e esportiva criada por Marina Amancio, conduzida em acompanhamento individual de dez semanas. Em vez de tratar uma área por vez, ela regula cinco eixos ao mesmo tempo: alimentação, movimento, sono, intestino e comportamento. O objetivo é que o paciente termine o processo sabendo decidir sozinho, sem depender de dieta nem de acompanhamento permanente." }
+          "acceptedAnswer": { "@type": "Answer", "text": "É uma abordagem integrativa em saúde que tem como base a nutrição comportamental, criada por Marina Amancio e conduzida em acompanhamento individual de dez semanas. Em vez de tratar uma área por vez, ela regula cinco eixos ao mesmo tempo: alimentação, atividade física, sono, intestino e saúde mental. O objetivo é que o paciente termine o processo sabendo decidir sozinho, sem depender de dieta nem de acompanhamento permanente." }
         },
         {
           "@type": "Question",
@@ -569,6 +645,11 @@ footer p{max-width:none;color:var(--moss)}
   ]
 }
 </script>
+
+
+<a class="wa-float" href="https://wa.me/5531994889818?text=Oi%20Marina%2C%20cheguei%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20acompanhamento." target="_blank" rel="noopener" aria-label="Falar com Marina no WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.85 9.85 0 0 0 12.04 2zm0 18.13h-.01c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.22 8.22 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.25 8.24z"/></svg>
+</a>
 
 </body>
 </html>
