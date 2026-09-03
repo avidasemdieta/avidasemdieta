@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://avidasemdieta.com.br/sitemap.xml

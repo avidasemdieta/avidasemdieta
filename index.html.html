@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- TROCAR: substitua avidasemdieta.com.br pelo seu domínio real em TODAS as linhas abaixo -->
+<title>A Vida Sem Dieta | Nutrição comportamental e esportiva com Marina Amancio</title>
+<meta name="description" content="Acompanhamento individual de dez semanas que regula alimentação, movimento, sono, intestino e comportamento. Emagrecimento e saúde sem dieta restritiva, com nutricionista e personal trainer. Atendimento online.">
+<link rel="canonical" href="https://avidasemdieta.com.br/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Marina Amancio">
+<meta name="theme-color" content="#294036">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="A Vida Sem Dieta">
+<meta property="og:title" content="A Vida Sem Dieta | Marina Amancio">
+<meta property="og:description" content="Dez semanas para regular os cinco eixos que fazem o corpo responder: alimentação, movimento, sono, intestino e comportamento. Sem dieta restritiva.">
+<meta property="og:url" content="https://avidasemdieta.com.br/">
+<meta property="og:image" content="https://avidasemdieta.com.br/marina.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F3ED;
+  --paper-2:#EAE9E0;
+  --ink:#16201B;
+  --pine:#294036;
+  --body:#33443B;
+  --moss:#6B7A6D;
+  --ochre:#B87A15;
+  --ochre-soft:#F0DFBE;
+  --line:#D5D4C7;
+  --serif:"Newsreader",Georgia,serif;
+  --sans:"Instrument Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:1.125rem;
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+.narrow{max-width:40rem}
+section{padding:5.5rem 0}
+@media(max-width:640px){section{padding:3.75rem 0}body{font-size:1.0625rem}}
+
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.14;letter-spacing:-0.012em}
+h1{font-size:clamp(2.1rem,5vw,3.55rem);line-height:1.18;font-variation-settings:"opsz" 60}
+h2{font-size:clamp(1.75rem,3.4vw,2.5rem);line-height:1.2;font-variation-settings:"opsz" 48;margin-bottom:1.5rem}
+h3{font-size:1.3rem;font-variation-settings:"opsz" 26;font-weight:600}
+p{max-width:60ch;color:var(--body)}
+a{color:inherit}
+
+.topbar{border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:1.1rem;padding-bottom:1.1rem;gap:1rem}
+.mark{font-family:var(--serif);font-size:1.2rem;font-weight:600;font-variation-settings:"opsz" 24;letter-spacing:-0.01em}
+.mark span{color:var(--moss);font-weight:400}
+
+.hero{padding-top:4.5rem;padding-bottom:4rem}
+.hero h1{max-width:19ch;color:var(--ink);opacity:0;animation:rise .8s cubic-bezier(.2,.7,.3,1) .05s forwards}
+.hero .sub{margin-top:2rem;font-size:1.22rem;color:var(--pine);max-width:50ch;opacity:0;animation:rise .8s cubic-bezier(.2,.7,.3,1) .28s forwards}
+.hero .who{margin-top:1.1rem;font-size:1.02rem;color:var(--moss);max-width:52ch;opacity:0;animation:rise .8s cubic-bezier(.2,.7,.3,1) .42s forwards}
+.hero .actions{margin-top:2.4rem;opacity:0;animation:rise .8s cubic-bezier(.2,.7,.3,1) .56s forwards}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero h1,.hero .sub,.hero .who,.hero .actions{opacity:1;animation:none}}
+
+.rule{width:3.5rem;height:2px;background:var(--ochre);margin-bottom:2.2rem}
+
+.btn{
+  display:inline-block;background:var(--pine);color:var(--paper);
+  padding:1rem 2rem;border-radius:2rem;text-decoration:none;
+  font-weight:600;font-size:1.05rem;
+  transition:background .2s ease;
+}
+.btn:hover,.btn:focus-visible{background:var(--ink)}
+.btn-ghost{
+  display:inline-block;margin-left:1.1rem;text-decoration:none;
+  border-bottom:1px solid var(--moss);padding-bottom:2px;color:var(--pine);font-weight:500;
+}
+@media(max-width:520px){.btn{display:block;text-align:center}.btn-ghost{display:inline-block;margin:1.2rem 0 0}}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ochre);outline-offset:3px}
+
+.recog{background:var(--paper-2)}
+.recog ul{list-style:none;margin-top:.5rem}
+.recog li{
+  padding:1.15rem 0 1.15rem 1.9rem;border-bottom:1px solid var(--line);
+  position:relative;max-width:54ch;color:var(--body);
+}
+.recog li:last-child{border-bottom:none}
+.recog li::before{
+  content:"";position:absolute;left:0;top:1.8rem;
+  width:.6rem;height:.6rem;border:2px solid var(--ochre);border-radius:50%;
+}
+.recog .after{margin-top:2.4rem;font-family:var(--serif);font-size:1.42rem;line-height:1.42;color:var(--pine);max-width:32ch;font-weight:500}
+
+.eixo{
+  display:grid;grid-template-columns:12rem 1fr;gap:2.5rem;
+  padding:2.1rem 0;border-top:1px solid var(--line);align-items:start;
+}
+.eixo:last-of-type{border-bottom:1px solid var(--line)}
+.eixo h3{padding-top:.1rem}
+@media(max-width:680px){.eixo{grid-template-columns:1fr;gap:.6rem;padding:1.6rem 0}}
+
+.proc{background:var(--pine);color:var(--paper)}
+.proc h2{color:var(--paper)}
+.proc .lede{color:var(--ochre-soft);font-size:1.18rem;max-width:50ch}
+.steps{margin-top:3rem;display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem}
+@media(max-width:760px){.steps{grid-template-columns:1fr;gap:2rem}}
+.step{border-top:2px solid var(--ochre);padding-top:1.1rem}
+.step .n{font-family:var(--serif);font-size:2.1rem;color:var(--ochre-soft);line-height:1;display:block;margin-bottom:.7rem}
+.step h3{color:var(--paper);margin-bottom:.5rem}
+.step p{color:#CDD5CC;font-size:1.02rem}
+.after-care{
+  margin-top:3.4rem;padding:1.9rem;border:1px solid rgba(240,223,190,.35);
+  border-radius:.4rem;max-width:46rem;
+}
+.after-care h3{color:var(--ochre-soft);margin-bottom:.6rem}
+.after-care p{color:#CDD5CC}
+
+.rating{display:flex;align-items:baseline;gap:.85rem;margin-bottom:.4rem;flex-wrap:wrap}
+.rating .num{font-family:var(--serif);font-size:3.1rem;line-height:1;font-variation-settings:"opsz" 48;font-weight:600}
+.stars{color:var(--ochre);letter-spacing:.12em;font-size:1.05rem}
+.rating .src{color:var(--moss);font-size:1rem}
+.reviews{margin-top:2.8rem;columns:2;column-gap:1.6rem}
+@media(max-width:820px){.reviews{columns:1}}
+.review{
+  background:#fff;border:1px solid var(--line);border-radius:.5rem;
+  padding:1.5rem 1.5rem 1.35rem;margin-bottom:1.6rem;
+  break-inside:avoid;font-size:1.02rem;line-height:1.62;
+}
+.review .head{display:flex;align-items:center;gap:.7rem;margin-bottom:.65rem}
+.review .av{
+  width:2.2rem;height:2.2rem;border-radius:50%;background:var(--pine);color:#fff;
+  display:grid;place-items:center;font-weight:600;font-size:.92rem;flex:none;
+}
+.review .name{font-weight:600;font-size:1rem;line-height:1.25}
+.review .date{color:var(--moss);font-size:.88rem}
+.review .stars{font-size:.92rem;margin-bottom:.55rem;display:block}
+.review p{color:#2C3830;max-width:none}
+.review p + p{margin-top:.65rem}
+
+.sobre{display:grid;grid-template-columns:.85fr 1.15fr;gap:3.5rem;align-items:start}
+@media(max-width:820px){.sobre{grid-template-columns:1fr;gap:2rem}}
+.sobre img{width:100%;height:auto;border-radius:.5rem;display:block}
+.creds{list-style:none;margin-top:1.8rem}
+.creds li{padding:.72rem 0;border-bottom:1px solid var(--line);color:var(--pine)}
+.creds li:last-child{border-bottom:none}
+
+.filtro{background:var(--paper-2)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+@media(max-width:760px){.two{grid-template-columns:1fr;gap:2.4rem}}
+.two ul{list-style:none}
+.two li{padding:.75rem 0 .75rem 1.6rem;position:relative;border-bottom:1px solid var(--line);color:var(--body)}
+.two li:last-child{border-bottom:none}
+.two .yes li::before{content:"+";position:absolute;left:0;color:var(--ochre);font-weight:600}
+.two .no li::before{content:"–";position:absolute;left:0;color:var(--moss);font-weight:600}
+.two h3{margin-bottom:.6rem}
+.two .no li{color:var(--moss)}
+
+.cta{background:var(--pine);color:var(--paper)}
+.cta h2{color:var(--paper);max-width:16ch}
+.cta p{color:#CDD5CC;max-width:48ch;margin-bottom:2.2rem}
+.cta .btn{background:var(--ochre-soft);color:var(--ink)}
+.cta .btn:hover,.cta .btn:focus-visible{background:#fff}
+.cta .fine{margin-top:1.6rem;font-size:.96rem;color:#A8B4A9;max-width:46ch}
+
+.faq details{border-bottom:1px solid var(--line);padding:1.2rem 0}
+.faq summary{
+  cursor:pointer;font-weight:600;font-size:1.08rem;list-style:none;
+  display:flex;justify-content:space-between;gap:1rem;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--ochre);font-size:1.45rem;line-height:1;flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:.85rem}
+
+footer{border-top:1px solid var(--line);padding:2.5rem 0;color:var(--moss);font-size:.95rem}
+footer p{max-width:none;color:var(--moss)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="mark">A Vida Sem Dieta <span>Marina Amancio</span></div>
+    <a class="btn-ghost" href="#aplicar" style="margin-left:0">Aplicar</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="rule"></div>
+    <h1>Você não precisa viver como atleta, fazer dieta restritiva ou transformar a saúde em um segundo emprego para ter um corpo que funciona bem.</h1>
+    <p class="sub">A Vida Sem Dieta é uma abordagem de dez semanas que regula os cinco eixos que fazem o corpo responder: alimentação, movimento, sono, intestino e comportamento.</p>
+    <p class="who">Conduzida por Marina Amancio, nutricionista e personal trainer, com pós-graduação em nutrição comportamental e em nutrição esportiva. Seis anos de prática, livro publicado e artigo em revista internacional citado em 28 países.</p>
+    <div class="actions">
+      <a class="btn" href="#aplicar">Aplicar para uma vaga</a>
+      <a class="btn-ghost" href="#abordagem">Entender a abordagem</a>
+    </div>
+  </div>
+</section>
+
+<!-- RECONHECIMENTO -->
+<section class="recog">
+  <div class="wrap">
+    <h2>Talvez você se reconheça aqui</h2>
+    <ul>
+      <li>Você gosta de se mexer. Academia, corrida, dança, beach tennis, às vezes duas coisas no mesmo dia, e não sabe se está se recuperando entre elas.</li>
+      <li>Sente que faz tudo mais ou menos certo, mas sente que o corpo não responde na mesma proporção do esforço.</li>
+      <li>Vive com alguma dor pequena que vai e volta, e ninguém explicou de onde ela vem.</li>
+      <li>Não sabe direito o que comer antes, durante e depois do que você faz.</li>
+      <li>Já tentou dieta. Funcionou por um tempo e não se sustentou.</li>
+      <li>Gostaria de emagrecer, mas não ao custo de passar o resto da vida contando comida.</li>
+    </ul>
+    <p class="after">Você não quer “virar atleta”, quer fazer bem aquilo que já gosta de fazer, e quer que o corpo acompanhe.</p>
+  </div>
+</section>
+
+<!-- ABORDAGEM -->
+<section id="abordagem">
+  <div class="wrap">
+    <div class="narrow">
+      <h2>O corpo não responde a esforço isolado</h2>
+      <p style="font-size:1.15rem;color:var(--pine)">Quase todo mundo trata uma coisa por vez. Um profissional cuida do treino, outro da comida, e ninguém olha o conjunto. O corpo não funciona assim. Ele responde quando cinco áreas estão reguladas ao mesmo tempo, e trava quando uma delas está fora.</p>
+    </div>
+
+    <div style="margin-top:3.2rem">
+      <div class="eixo">
+        <h3>Alimentação</h3>
+        <p>Comer o que o corpo precisa, quando precisa, na quantidade que precisa, com os alimentos que já fazem parte da sua rotina. Nutrição adequada sustenta imunidade, longevidade e o rendimento naquilo que você gosta de fazer.</p>
+      </div>
+      <div class="eixo">
+        <h3>Movimento</h3>
+        <p>O que você já faz, organizado. Quais treinos podem conviver no mesmo dia, quais competem entre si, quanto descanso cada um exige. Movimento bem distribuído permite que você continue fazendo o que gosta, sem parar por lesões, favorecendo o emagrecimento ou até o ganho de desempenho.</p>
+      </div>
+      <div class="eixo">
+        <h3>Sono</h3>
+        <p>É no sono que a recuperação acontece de verdade. Sem ele, treino vira desgaste, a fome desregula e o humor acompanha. Nenhum ajuste alimentar compensa uma noite mal dormida de forma crônica.</p>
+      </div>
+      <div class="eixo">
+        <h3>Intestino</h3>
+        <p>Não importa só o que você come, importa o que você absorve. O intestino responde por boa parte do sistema imunológico e costuma ser o primeiro lugar onde o corpo avisa que alguma coisa não está certa.</p>
+      </div>
+      <div class="eixo">
+        <h3>Comportamento</h3>
+        <p>Aprender a diferenciar fome de vontade, sair do ciclo de culpa e comer em paz. É essa parte que faz o resultado permanecer depois que o acompanhamento termina.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:2.8rem;font-family:var(--serif);font-size:1.4rem;font-weight:500;line-height:1.45;color:var(--pine);max-width:34ch">Quando os cinco eixos estão alinhados, o corpo passa a responder ao esforço que você já vinha fazendo.</p>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="proc">
+  <div class="wrap">
+    <h2>Dez semanas, com começo, meio e fim</h2>
+    <p class="lede">Não é um plano alimentar entregue e renovado para sempre. É um tratamento desenhado para terminar, porque o objetivo é você não precisar mais dele.</p>
+
+    <div class="steps">
+      <div class="step">
+        <span class="n">1</span>
+        <h3>Mapeamento</h3>
+        <p>Entender o que já existe: rotina, treinos, sono, sintomas, exames, histórico e relação com a comida. É aqui que aparece o que está travando, e quase nunca é onde você imagina.</p>
+      </div>
+      <div class="step">
+        <span class="n">2</span>
+        <h3>Regulação</h3>
+        <p>Os cinco eixos ajustados em conjunto, com explicação do porquê de cada mudança. Nada de protocolo pronto: as escolhas partem do que você come, do que você gosta e do tempo que você tem.</p>
+      </div>
+      <div class="step">
+        <span class="n">3</span>
+        <h3>Autonomia</h3>
+        <p>Você sai sabendo decidir sozinho em situação nova, seja viagem, jantar fora, semana atípica, treino puxado. É esse o resultado que se mantém quando o acompanhamento acaba.</p>
+      </div>
+    </div>
+
+    <div class="after-care">
+      <h3>E depois das dez semanas</h3>
+      <p>O acompanhamento por WhatsApp continua sem prazo e sem custo adicional. Exame novo, dúvida, mudança de rotina, qualquer situação de saúde: você segue tendo um acompanhamento para tirar suas dúvidas e te orientar da melhor forma.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section>
+  <div class="wrap">
+    <div class="rating">
+      <span class="num">5,0</span>
+      <span class="stars">★★★★★</span>
+      <span class="src">avaliações de pacientes no Google</span>
+    </div>
+    <p>O que eles descrevem diz mais sobre o trabalho do que qualquer descrição minha.</p>
+
+    <div class="reviews">
+
+      <article class="review">
+        <div class="head">
+          <div class="av">M</div>
+          <div><div class="name">Marcone Michel</div><div class="date">30 de setembro de 2024</div></div>
+        </div>
+        <span class="stars">★★★★★</span>
+        <p>Eu fiquei UM ANO tentando todas as opções porque sempre que eu lia sobre a abordagem da Marina, eu achava que era balela e que não funcionaria.</p>
+        <p>No desespero, resolvi dar um salto de fé e adquiri o tratamento, e FOI A MELHOR COISA QUE EU JÁ FIZ.</p>
+        <p>Ela te ensina em 10 semanas como se reconectar consigo mesmo. Você aprende a se respeitar e como consequência você finalmente começa a ter uma relação (mais) saudável com a comida.</p>
+        <p>Não tenho mais compulsões alimentares e emagreci bastante durante o processo todo. SUPER RECOMENDO pra todos! Vale cada centavo que custa!</p>
+      </article>
+
+      <article class="review">
+        <div class="head">
+          <div class="av">N</div>
+          <div><div class="name">Natalia Chagas</div><div class="date">20 de maio de 2025</div></div>
+        </div>
+        <span class="stars">★★★★★</span>
+        <p>Encontrar a Marina foi um divisor de águas na minha vida. Que trabalho fantástico e com total sentido!</p>
+        <p>Muito mais do que “passar uma dieta”, ela me ajudou a identificar pontos chave que impedem minha evolução no emagrecimento e até mesmo em outras áreas da vida.</p>
+        <p>Fizemos todo um trabalho comportamental em várias áreas da minha vida e, pela primeira vez depois de adulta, eu pude comer em paz, sem culpa e sem estar fazendo errado.</p>
+        <p>Indico de olhos fechados!</p>
+      </article>
+
+      <article class="review">
+        <div class="head">
+          <div class="av">C</div>
+          <div><div class="name">Carlos Eduardo Vieira da Silva</div><div class="date">11 de fevereiro de 2025</div></div>
+        </div>
+        <span class="stars">★★★★★</span>
+        <p>Experiência incrível e transformadora! Profissional dedicada e competentíssima. Um tratamento que trabalha todos os aspectos relacionados à saúde (treinos, alimentação, saúde mental, controle emocional etc.).</p>
+        <p>As consultas são personalizadas, com explicações didáticas, sempre amparadas em pesquisas científicas e experiências práticas, o que nos faz entender a lógica e aplicar/adaptar no dia a dia.</p>
+        <p>Além disso, disponibiliza um conjunto de técnicas e dicas que serão úteis para sempre.</p>
+      </article>
+
+      <article class="review">
+        <div class="head">
+          <div class="av">B</div>
+          <div><div class="name">Bruno Barcala</div><div class="date">30 de outubro de 2024</div></div>
+        </div>
+        <span class="stars">★★★★★</span>
+        <p>O tratamento desenvolvido por ela inclui, além da “vida sem dieta”, muitos outros pilares importantes, que colaboram de forma muito perspicaz na qualidade do sono, bem como na melhor definição do perfil dos exercícios físicos indicados para cada pessoa, com base na particular condição de saúde e constituição física de cada um.</p>
+        <p>Importantíssimo também ressaltar que o tratamento oferecido é definido para ter começo, meio e fim, tendo sido criado para permitir a independência de cada paciente!</p>
+      </article>
+
+      <article class="review">
+        <div class="head">
+          <div class="av">M</div>
+          <div><div class="name">Mônica Pereira</div><div class="date">26 de agosto de 2024</div></div>
+        </div>
+        <span class="stars">★★★★★</span>
+        <p>Marina é uma profissional sensacional, muito prestativa, excelente ouvinte e compartilha com o paciente todo o conhecimento necessário para ter um estilo de vida saudável sem precisar de dietas.</p>
+        <p>Durante o tratamento tive resultados maravilhosos, encontrei minha melhor versão e a minha autoestima melhorou muito. Além disso, a Marina tem uma visão holística de todos os aspectos da sua vida que impactam no seu bem-estar e a sua saúde.</p>
+      </article>
+
+      <article class="review">
+        <div class="head">
+          <div class="av">L</div>
+          <div><div class="name">Lara Figueiredo</div><div class="date">19 de maio de 2025</div></div>
+        </div>
+        <span class="stars">★★★★★</span>
+        <p>Pra quem já tentou de TUDO e já desistiu, assim como eu tinha desistido, dê mais uma chance com a Marina na nutrição comportamental… minha vida está mudando dia após dia e eu não tenho palavras pra agradecer ou descrever como estou feliz e confiante no processo contínuo de viver bem!</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section>
+  <div class="wrap sobre">
+    <img src="marina.jpg" width="900" height="1125" loading="lazy" decoding="async" alt="Marina Amancio, nutricionista e personal trainer, sentada em uma pedra durante uma trilha">
+    <div>
+      <h2>Quem conduz</h2>
+      <p style="color:var(--pine);font-size:1.1rem">Sou nutricionista e personal trainer, com duas pós-graduações, em nutrição comportamental e em nutrição esportiva. Pratico esporte há dezessete anos e como normalmente, inclusive as coisas que gosto. Não me venha com alimento “fit”: aqui é sobre comer de tudo, comida de verdade, com equilíbrio e prazer.</p>
+      <p style="margin-top:1rem">A minha abordagem é destaque no Brasil e no mundo não por ser extrema, mas por ser exclusiva. É a única que trabalha esses cinco eixos ao mesmo tempo e tem foco em desenvolver a autonomia do paciente. É por isso que o meu artigo, publicado em revista internacional, foi citado em 28 países, e hoje atendo também fora do Brasil.</p>
+      <p style="margin-top:1rem">A Vida Sem Dieta nasceu disso. Primeiro na minha vida, depois na de centenas de pacientes ao longo de seis anos.</p>
+      <ul class="creds">
+        <li>Nutricionista e personal trainer</li>
+        <li>Pós-graduações em nutrição comportamental e nutrição esportiva</li>
+        <li>Artigo publicado em revista internacional, citado em 28 países</li>
+        <li>Livro publicado sobre a abordagem</li>
+        <li>Seis anos de prática, com atendimento dentro e fora do Brasil</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FILTRO -->
+<section class="filtro">
+  <div class="wrap">
+    <h2>Antes de aplicar</h2>
+    <p style="color:var(--pine);margin-bottom:2.4rem">Atendo poucas pessoas por vez, individualmente. Vale saber se faz sentido para você.</p>
+    <div class="two">
+      <div>
+        <h3>É para você se</h3>
+        <ul class="yes">
+          <li>Você já se movimenta, ou quer iniciar com orientação</li>
+          <li>Quer entender o porquê das coisas, não receber um plano pronto</li>
+          <li>Gostaria de ajustar rotina e comportamentos, no seu ritmo</li>
+          <li>Quer saúde em primeiro lugar, com o resultado estético vindo junto</li>
+          <li>Procura algo que se sustente sem depender de ninguém</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Não é para você se</h3>
+        <ul class="no">
+          <li>Você procura resultado rápido acima de tudo</li>
+          <li>Quer que alguém resolva sem sua participação</li>
+          <li>Espera uma dieta pronta para seguir sem entender</li>
+          <li>Está comparando preço com consulta avulsa</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="aplicar">
+  <div class="wrap">
+    <h2>Aplique para uma vaga</h2>
+    <p>Preencha o formulário. São poucas perguntas sobre sua rotina, o que você já tentou e o que quer resolver. Se fizer sentido, marcamos uma conversa. Se não fizer, eu digo com franqueza.</p>
+    <!-- TROCAR: coloque aqui o link do seu formulário (Google Forms, Typeform, Tally) -->
+    <a class="btn" href="#" target="_blank" rel="noopener">Preencher o formulário</a>
+    <p class="fine">Atendimento individual e online, com dez semanas de duração e acompanhamento por WhatsApp depois. Investimento apresentado na conversa.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap narrow">
+    <h2>Perguntas frequentes</h2>
+
+    <details>
+      <summary>O que é A Vida Sem Dieta?</summary>
+      <p>É uma abordagem de nutrição comportamental e esportiva criada por Marina Amancio, conduzida em acompanhamento individual de dez semanas. Em vez de tratar uma área por vez, ela regula cinco eixos ao mesmo tempo: alimentação, movimento, sono, intestino e comportamento. O objetivo é que o paciente termine o processo sabendo decidir sozinho, sem depender de dieta nem de acompanhamento permanente.</p>
+    </details>
+
+    <details>
+      <summary>Eu vou receber uma dieta?</summary>
+      <p>Não. Você vai receber orientação para entender o que o seu corpo precisa, quando e quanto, com os alimentos que já fazem parte da sua rotina. A ideia é justamente que você não dependa de um cardápio para decidir.</p>
+    </details>
+
+    <details>
+      <summary>E se meu objetivo for emagrecer?</summary>
+      <p>A nutrição comportamental é a melhor forma de ter um emagrecimento duradouro. Ele é consequência de regular os cinco eixos, e é por isso que ele se mantém depois: porque a causa foi tratada, não o sintoma.</p>
+    </details>
+
+    <details>
+      <summary>Preciso treinar para fazer o acompanhamento?</summary>
+      <p>Não precisa ser atleta nem ter rotina de academia. Mas movimento é um dos cinco eixos, então em algum momento ele entra, no formato que couber na sua vida. Mesmo que seja em atividades lúdicas, como dança, ou com o peso do corpo em casa, poucos minutos e algumas vezes por semana.</p>
+    </details>
+
+    <details>
+      <summary>Por que dez semanas e não um acompanhamento contínuo?</summary>
+      <p>Porque o objetivo é você aprender a decidir sozinho. Acompanhamento sem fim mantém a pessoa dependente do profissional. Aqui você cria autonomia, e depois dela o suporte por WhatsApp continua.</p>
+    </details>
+
+    <details>
+      <summary>É online ou presencial?</summary>
+      <p>Online, com contato próximo ao longo de todo o processo.</p>
+    </details>
+
+    <details>
+      <summary>Como sei que funciona para o meu caso?</summary>
+      <p>É exatamente para isso que existe a conversa antes. Se eu achar que não é o melhor caminho para você, eu digo, e, quando faz sentido, indico outro profissional que possa te ajudar da melhor forma.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>A Vida Sem Dieta. Marina Amancio, nutricionista e educadora física.</p>
+    <p style="margin-top:.4rem">Este conteúdo é informativo e não substitui avaliação individual. Os resultados descritos pelos pacientes são individuais e variam conforme cada caso.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://avidasemdieta.com.br/#marina",
+      "name": "Marina Amancio",
+      "jobTitle": "Nutricionista e personal trainer",
+      "image": "https://avidasemdieta.com.br/marina.jpg",
+      "url": "https://avidasemdieta.com.br/",
+      "knowsAbout": [
+        "nutrição comportamental",
+        "nutrição esportiva",
+        "emagrecimento sem dieta",
+        "saúde intestinal",
+        "sono e recuperação",
+        "treinamento físico"
+      ],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Pós-graduação", "name": "Nutrição comportamental" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Pós-graduação", "name": "Nutrição esportiva" }
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://avidasemdieta.com.br/#negocio",
+      "name": "A Vida Sem Dieta",
+      "description": "Acompanhamento individual de dez semanas em nutrição comportamental e esportiva, com regulação de cinco eixos: alimentação, movimento, sono, intestino e comportamento.",
+      "url": "https://avidasemdieta.com.br/",
+      "image": "https://avidasemdieta.com.br/marina.jpg",
+      "founder": { "@id": "https://avidasemdieta.com.br/#marina" },
+      "provider": { "@id": "https://avidasemdieta.com.br/#marina" },
+      "areaServed": { "@type": "Country", "name": "Brasil" },
+      "availableLanguage": "pt-BR",
+      "serviceType": "Acompanhamento nutricional individual online",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Acompanhamento A Vida Sem Dieta",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Acompanhamento individual de dez semanas",
+            "description": "Mapeamento, regulação dos cinco eixos e construção de autonomia, com suporte por WhatsApp após o término."
+          }
+        }]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é A Vida Sem Dieta?",
+          "acceptedAnswer": { "@type": "Answer", "text": "É uma abordagem de nutrição comportamental e esportiva criada por Marina Amancio, conduzida em acompanhamento individual de dez semanas. Em vez de tratar uma área por vez, ela regula cinco eixos ao mesmo tempo: alimentação, movimento, sono, intestino e comportamento. O objetivo é que o paciente termine o processo sabendo decidir sozinho, sem depender de dieta nem de acompanhamento permanente." }
+        },
+        {
+          "@type": "Question",
+          "name": "Eu vou receber uma dieta?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não. Você recebe orientação para entender o que o seu corpo precisa, quando e quanto, com os alimentos que já fazem parte da sua rotina. A ideia é que você não dependa de um cardápio para decidir." }
+        },
+        {
+          "@type": "Question",
+          "name": "E se meu objetivo for emagrecer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A nutrição comportamental é a melhor forma de ter um emagrecimento duradouro. Ele é consequência de regular os cinco eixos, e é por isso que se mantém depois: porque a causa foi tratada, não o sintoma." }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso treinar para fazer o acompanhamento?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Não precisa ser atleta nem ter rotina de academia. Movimento é um dos cinco eixos, então em algum momento ele entra, no formato que couber na sua vida, mesmo que seja dança ou exercícios com o peso do corpo em casa, poucos minutos algumas vezes por semana." }
+        },
+        {
+          "@type": "Question",
+          "name": "Por que dez semanas e não um acompanhamento contínuo?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Porque o objetivo é você aprender a decidir sozinho. Acompanhamento sem fim mantém a pessoa dependente do profissional. Aqui você cria autonomia, e depois dela o suporte por WhatsApp continua." }
+        },
+        {
+          "@type": "Question",
+          "name": "É online ou presencial?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Online, com contato próximo ao longo de todo o processo." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
