@@ -10,6 +10,8 @@
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="author" content="Marina Amancio">
 <meta name="theme-color" content="#294036">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" href="logo.png">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -64,9 +66,9 @@ a{color:inherit}
 
 .topbar{border-bottom:1px solid var(--line)}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:1.1rem;padding-bottom:1.1rem;gap:1rem}
-.mark{font-family:var(--serif);font-size:1.2rem;font-weight:600;font-variation-settings:"opsz" 24;letter-spacing:-0.01em;display:flex;align-items:center;gap:.7rem}
-.avatar{width:3rem;height:3rem;border-radius:50%;object-fit:cover;flex:none}
-@media(max-width:520px){.mark{font-size:1.02rem;gap:.6rem}.avatar{width:2.5rem;height:2.5rem}}
+.mark{text-decoration:none;font-family:var(--serif);font-size:1.2rem;font-weight:600;font-variation-settings:"opsz" 24;letter-spacing:-0.01em;display:flex;align-items:center;gap:.7rem}
+.logo{width:3.4rem;height:3.4rem;object-fit:contain;flex:none}
+@media(max-width:520px){.mark{font-size:1rem;gap:.5rem}.logo{width:2.8rem;height:2.8rem}}
 .mark span{color:var(--moss);font-weight:400}
 
 .hero{padding-top:4.5rem;padding-bottom:4rem}
@@ -169,7 +171,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ochre);outline-offs
 .review p + p{margin-top:.65rem}
 
 .sobre{display:grid;grid-template-columns:1fr;gap:3.2rem;align-items:start}
-@media(min-width:900px){.sobre{grid-template-columns:1.05fr 1.25fr;gap:4rem}.photo-stack{position:sticky;top:2.5rem}}
+@media(min-width:900px){.sobre{grid-template-columns:1.05fr 1.25fr;gap:4rem}}
 .sobre .photo-main{width:100%;height:auto;border-radius:.5rem;display:block}
 .photo-stack{position:relative}
 .portrait{
@@ -229,6 +231,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ochre);outline-offs
 }
 .wa-float:hover,.wa-float:focus-visible{background:var(--ink)}
 @media print{.wa-float{display:none}}
+@media(min-width:900px){
+  .sobre .photo-stack{position:sticky;top:3rem;align-self:start}
+}
 footer{border-top:1px solid var(--line);padding:2.5rem 0;color:var(--moss);font-size:.95rem}
 footer p{max-width:none;color:var(--moss)}
 </style>
@@ -237,7 +242,7 @@ footer p{max-width:none;color:var(--moss)}
 
 <div class="topbar">
   <div class="wrap">
-    <div class="mark"><img class="avatar" src="marina-rosto.jpg" width="400" height="400" alt="Marina Amancio">A Vida Sem Dieta <span>Marina Amancio</span></div>
+    <a class="mark" href="/" aria-label="A Vida Sem Dieta, página inicial"><img class="logo" src="logo.png" width="320" height="320" alt="">A Vida Sem Dieta <span>Marina Amancio</span></a>
     <a class="btn-ghost" href="#aplicar" style="margin-left:0">Falar comigo</a>
   </div>
 </div>
